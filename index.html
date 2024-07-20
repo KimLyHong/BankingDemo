@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHIP MONG BANK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar-->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Photos/Chip_Mong_Group.png" alt="Chip Mong Bank Logo">
+            </div>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="dropbtn"> About Us</a>
+                    <div class="dropdown-content">
+                        <a href="#">Vision & Mission</a>
+                        <a href="#">Annual Report</a>
+                        <a href="#">Board of Directors</a>
+                        <a href="#">Executive Management</a>
+                        <a href="#">Organization Chart</a>
+                        <a href="#">Locat</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                </li>
+                <li><a href="#">Business Banking</a></li>
+                <li><a href="#">Retail Banking</a></li>
+                <li><a href="#">Digital Banking</a></li>
+                <li><a href="#">Promotions</a></li>
+                <li><a href="#">News and Media</a></li>
+                <li><a href="#">Careers</a></li>
+                </li>
+            </ul>
+            <div class="language">
+                <img src="Photos/Flag_of_Cambodia.svg.png" alt="KH">
+                <a href="#" class="internet-banking-btn">Internet Banking</a>
+            </div>
+        </nav>
+    </header>
+    <!-- End Navigation Bar-->
+    <!-- Carousel Slideshow-->
+    <div class="mySlides fade">
+        <img src="Photos/4fc9ccdc-cff9-4eda-b571-88a53bf1a988.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+            <img src="Photos/796784b2-3efd-4f93-af23-df73e8e1d919.jpg" style="width:100%">
+            <div class="text">Image 2</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+            <img src="Photos/72988cf5-f8ed-4cd7-802d-ebeae86b510f.jpg" style="width:100%">
+            <div class="text">Image 3</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    }
+    </script>
+    <!--End Carousel Slideshow-->
+
+    <!-- Container -->
+    <div class="card">
+        <h1>Banking Services</h1>
+        <h2>for everyone.</h2>
+        <div class="services">
+            <div class="service retail">
+                <img src="Photos/portrait-young-asian-business-man-posing-blue-background.png" alt="Woman using phone">
+                <div class="service-content">
+                    <h3>Retails Banking</h3>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+        <div>
+            <div class="service">
+                <img src="businessman.jpg" alt="Businessman">
+                <div class="service-content">
+                    <h3>Business Banking</h3>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+            <div class="service" style="margin-top: 20px;">
+                    <img src="businesswoman.jpg" alt="Businesswoman">
+                    <div class="service-content">
+                        <h3>Agent & Merchant</h3>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="banking-footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <ul>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Products</h3>
+            <ul>
+              <li><a href="#">Checking</a></li>
+              <li><a href="#">Savings</a></li>
+              <li><a href="#">Loans</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Security</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Accessibility</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Chip Mong Bank. All rights reserved.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon">FB</a>
+            <a href="#" class="social-icon">TW</a>
+            <a href="#" class="social-icon">IN</a>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
